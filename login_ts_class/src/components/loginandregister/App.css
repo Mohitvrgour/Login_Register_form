@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #21428d6e;
+
+}
+  .header .logo {
+    color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    justify-content: center;
+  }
+  
+  .header .logo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header .logo .icon {
+    font-size: 25px;
+    color: var(--PrimaryColor);
+    transform: translate(5px);
+  }
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container{
+  background-color: #1254a7a3;
+}
+
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 6.5rem;
+  }
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color:rgb(241, 238, 233);
+}
+
+button {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration:0.4s;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: grid;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration:none;
+}
+
+ .one:hover{
+  background-color: #33c8f5;
+ }
+
+ .zero{
+  background: none;
+  background-color: transparent;
+ }
+
+ .one{
+  background-color: #14aaaa;
+ }
+ 
+ .two:hover{
+  background-color: #2df04e;
+ }
+
+ .two{
+  background-color: rgb(0, 204, 119);
+  text-align: center;
+ }
+
+
+ @media screen and (max-width: 900px) {
+  button,.input-sec {
+  display: block;
+  float: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  }
+}
+/* Change styles for span and cancel button on  small screens */
+@media screen and (max-width: 500px) {
+  button,.input-sec {
+  display: block;
+  float: right;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  }
+}
+/* Change styles for span and cancel button on  extra small screens */
+@media screen and (max-width: 300px) {
+ button ,.input-sec{
+  display: block;
+  float: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 450) {
+    body {
+      border-radius: 5px;
+    }
+  }
+}
